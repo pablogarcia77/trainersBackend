@@ -83,16 +83,16 @@ router.post("/mercadopago", (req, res) => {
 			quantity: Number(req.body.quantity),
 		}],
 		back_urls: {
-			"success": "http://localhost:4200/pagoaprobado",
-			"failure": "http://localhost:4200/pagorechazado",
-			"pending": "http://localhost:4200/pagopendiente"
+			"success": "http://localhost/fullTrainers/pagoaprobado",
+			"failure": "http://localhost/fullTrainers/pagorechazado",
+			"pending": "http://localhost/fullTrainers/pagopendiente"
 		},
 		auto_return: 'approved',
         notification_url: 'https://hookb.in/PxxrLbDMYXtpKPrrKMGk',
         redirect_urls: {
-            "success": "http://localhost:4200/pagoaprobado",
-			"failure": "http://localhost:4200/pagorechazado",
-			"pending": "http://localhost:4200/pagopendiente"
+            "success": "http://localhost/fullTrainers/pagoaprobado",
+			"failure": "http://localhost/fullTrainers/pagorechazado",
+			"pending": "http://localhost/fullTrainers/pagopendiente"
         }
 	};
 
